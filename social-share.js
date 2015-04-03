@@ -1,3 +1,5 @@
+//https://jonsuh.com/blog/social-share-links/
+
 // opening the widgets in new window
 $(".social-share").on("click", function(e) {
   e.preventDefault();
