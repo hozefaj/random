@@ -1,7 +1,8 @@
 ## Javascript
 
-* Arrays
-* `typeOf`
+* [Arrays](#arrays)
+* [call(), apply() & bind()]()
+* [typeOf](#figuring-out-what-something-is)
 
 ###[Arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
 
@@ -53,6 +54,60 @@ var someItem = list.reduce(fucntion(previousValue, currentValue) {
         if(previousValue > currentValue) return previousValue;
         return currentValue;
 })
+```
+
+###call(), bind() & apply()
+```javascript
+// bind makes a copy of a function setting this to whatever we pass into it
+var person = {
+    firstname: 'John',
+    lastname: 'Doe',
+    getFullName: function() {
+        return this.firstname + ' ' + this.lastname;;
+    }
+}
+
+var logName = function(lang1, lang2) {
+    console.log('Logged: ' + this.getFullName());
+    console.log('Arguments: ' + lang1 + ' ' + lang2);
+    console.log('-----------');
+}.bind(person)
+
+logName('en', 'es');
+
+// call allows to invoke the function passing this context as first param
+// and all other args as comma separated
+logName.call(person, 'en', 'es');
+
+// apply allows to invoke the function passing this context as first param
+// and all other args in an array
+logName.apply(person, ['en', 'es']);
+
+(function(lang1, lang2) {
+
+    console.log('Logged: ' + this.getFullName());
+    console.log('Arguments: ' + lang1 + ' ' + lang2);
+    console.log('-----------');
+    
+}).apply(person, ['es', 'en']);
+
+// function borrowing...uses of call & apply
+var person2 = {
+    firstname: 'Jane',
+    lastname: 'Doe'
+}
+console.log(person.getFullName.apply(person2));
+
+// function currying
+function multiply(a, b) {
+    return a*b;   
+}
+
+var multipleByTwo = multiply.bind(this, 2);
+console.log(multipleByTwo(4));
+
+var multipleByThree = multiply.bind(this, 3);
+console.log(multipleByThree(4));
 ```
 
 ###Figuring out what something is...
