@@ -4,6 +4,8 @@
 * [call(), apply() & bind()](#call-bind--apply)
 * [typeOf](#figuring-out-what-something-is)
 
+> IIFE --> Immediately invoked function expression
+
 ###[Arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
 
 1. [forEach](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach) to loop through array
