@@ -3,8 +3,7 @@
 * [Arrays](#arrays)
 * [call(), apply() & bind()](#call-bind--apply)
 * [typeOf](#figuring-out-what-something-is)
-
-> IIFE --> Immediately invoked function expression
+* [template literal](#template-literals)
 
 ###[Arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
 
@@ -142,6 +141,12 @@ console.log(typeof null); // object....a bug since, like, forever...
 
 var z = function() { };
 console.log(typeof z); // function....since its a first class function
+```
+
+###template literal
+```javascript
+var name = 'John Doe';
+var greet = `Hello ${name}`; // Hello John Doe
 ```
 
 
