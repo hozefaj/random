@@ -3,7 +3,7 @@
 * [Arrays](#arrays)
 * [call(), apply() & bind()](#call-bind--apply)
 * [typeOf](#figuring-out-what-something-is)
-* [template literal](#template-literals)
+* [template literal](#template-literal)
 
 ###[Arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
 
