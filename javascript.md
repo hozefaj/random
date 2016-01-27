@@ -4,6 +4,7 @@
 * [call(), apply() & bind()](#call-bind--apply)
 * [typeOf](#figuring-out-what-something-is)
 * [template literal](#template-literal)
+* [class](#class)
 
 ###[Arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
 
@@ -147,6 +148,20 @@ console.log(typeof z); // function....since its a first class function
 ```javascript
 var name = 'John Doe';
 var greet = `Hello ${name}`; // Hello John Doe
+```
+
+###class
+```javascript
+class Person {
+        constructor(fname, lname) {
+                this.firstname = fname;
+                this.lastname = lname;
+        }
+        
+        greet() {
+                console.log('Hello, ' + this.firstname + this.lastname);
+        }        
+}
 ```
 
 
