@@ -165,6 +165,8 @@ class Person {
 }
 ```
 ###callbacks
+> callbacks: function passed to some function, which we assume will be invoked at sometime in future 
+
 ```javascript
 function greet(callback) {
         console.log("Hello World!!!");
