@@ -5,6 +5,7 @@
 * [typeOf](#figuring-out-what-something-is)
 * [template literal](#template-literal)
 * [class](#class)
+* [callbacks](#callbacks)
 
 ###[Arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
 
@@ -163,5 +164,22 @@ class Person {
         }        
 }
 ```
+###callbacks
+```javascript
+function greet(callback) {
+        console.log("Hello World!!!");
+        callback(); // callback is invoked
+}
 
+// callback is function expression
+greet(function() {
+        console.log("Callback is invoked");
+});
+
+var callback = function() {
+        console.log("Other callback is invoked");
+}
+
+greet(callback);
+```
 
