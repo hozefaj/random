@@ -7,6 +7,9 @@
 * [class](#class)
 * [callbacks](#callbacks)
 
+
+> SourceMaps: way to map production minified code into its original state
+
 ###[Arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
 
 1. [forEach](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach) to loop through array
