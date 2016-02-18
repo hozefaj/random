@@ -1,3 +1,6 @@
+/*jslint white: true */
+/*jslint node:true */
+'use strict';
 process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
 
 var fs = require('fs'),

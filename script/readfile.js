@@ -1,3 +1,4 @@
+/*jslint node:true */
 var fs = require('fs');
 
 function readLines(input, func) {
@@ -22,7 +23,7 @@ function readLines(input, func) {
 }
 
 function func(data) {
-  var url = "https://www.paypal.com/us/webapps/mpp/clickthru/" + data + "\n"
+  var url = "https://www.paypal.com/us/webapps/mpp/clickthru/" + data + "\n";
   fs.appendFile('output.txt', url, function(err) {
     if (err) throw err;
   });

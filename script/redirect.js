@@ -1,5 +1,5 @@
-process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
-
+/*jslint node:true, devel: true */
+/*jslint white: true */
 var fs = require('fs'),
     path = require('path'),
     request = require('sync-request');
@@ -14,7 +14,8 @@ var orglist = [],
     metadata = '',
     dust = '',
     result = '',
-    content = '';
+    content = '',
+    i=0;
 
 // creating list of orignal URL's
 var orglist = (fs.readFileSync('orginalURL.txt', 'utf8')).toString().split("\n");
@@ -35,7 +36,7 @@ for(i in orglist) {
             "country.x": 'us',
             "locale.x": "en_US"
         }
-    }
+    };
     var res = request('GET', url, options);
     console.log(url + " : " +res.statusCode);
 

@@ -1,20 +1,14 @@
-﻿/*
-    Working Now
-
-    This will construct MPP URLs from a text list. The raw list format (/ContentRoot/NZ/en/business-activation)
-    and output result (https://www.paypal.com/webapps/mpp/business-activation?country.x=NZ&locale.x=en_NZ).
-*/
-
-var fs = require('graceful-fs');
-var path = require('path'),
-var list = (fs.readFileSync(path.join(__dirname, 'orginalURL.txt'), 'utf8')).toString().split("\n");
-
-var array_with_url_parts = [];
+/*jslint node:true, devel: true */
+var fs = require('graceful-fs'),
+    path = require('path');
+    
+var list = (fs.readFileSync(path.join(__dirname, 'orginalURL.txt'), 'utf8')).toString().split("\n"),
+    array_with_url_parts = [];
 
 for(var i in list) {
     array_with_url_parts.push(list[i].split("/"));
 }
-//console.log(array_with_url_parts); //[ '', 'ContentRoot', 'MY', 'en', 'business-activation\r' ]
+
 for (var j in array_with_url_parts) {
     var pageURL = "https://www.paypal.com/webapps/mpp/"+array_with_url_parts[j][4].replace(/(\n|\r)+$/, ''),
         country_locale = "?country.x="+array_with_url_parts[j][2]+"&locale.x="+array_with_url_parts[j][3]+"_"+array_with_url_parts[j][2];
@@ -36,9 +30,6 @@ for (var j in array_with_url_parts) {
 }
 function writeToFile(urlOutput) {
     fs.appendFile(outputFile, urlOutput+"\n", function(err) {
-        if(err) {
-            return console.log(err);
-        }
-        //console.log("The file was saved!");
+        if(err) return err;
     });
 }
