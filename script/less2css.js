@@ -1,6 +1,5 @@
-/**
- * Created by hjodiawalla
- */
+/*jslint node:true, devel: true */
+/*jslint white: true */
 'use strict';
 
 var less = require('less'),

@@ -1,3 +1,4 @@
+/*jslint node:true */
 var fs = require('fs');
 var path = require('path');
 
@@ -28,9 +29,10 @@ var filePath = '';
 });*/
 
 
-var contents = fs.readFileSync(file, {encoding: 'utf-8'});
-var array = contents.toString().split("\n");
-var json = '';
+var contents = fs.readFileSync(file, {encoding: 'utf-8'}),
+    array = contents.toString().split("\n"),
+    json = '',
+    i=0;
 
 for (i in array) {
     filePath = "/Users/hjodiawalla/Desktop/MPPContentDevelopment/MPPContent/ContentRoot/JM/en/"+array[i]+"/metadata.json";
