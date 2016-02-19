@@ -1,7 +1,7 @@
 module.exports = function (grunt) {
     jshint: {
             all: {
-                src: 'javascripts/*/**.js',
+                src: './scripts/*.js',
                 options: {
                     node: true,
                     devel: true
