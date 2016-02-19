@@ -4,5 +4,3 @@ node_js:
 before_script:
   - npm install grunt-cli -g
   - npm install npm@latest -g
-  - npm install grunt -g
-script: grunt
