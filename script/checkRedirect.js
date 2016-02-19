@@ -1,3 +1,4 @@
+/*jslint node:true */
 'use strict';
 
 var fs = require('fs'),
@@ -40,8 +41,6 @@ function cleanContent(filePath) {
                 if(parseInt(redirect, 10) === 301) {
 
                     var defaultRedirectURI = json.redirectInfo.defaultRedirectURI;
-
-                    //console.log(defaultRedirectURI + " : " + filePath);
 
                     if(defaultRedirectURI.indexOf("paypal.com") > -1) {
                         console.log(defaultRedirectURI + " : " + filePath);
