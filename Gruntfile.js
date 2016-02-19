@@ -8,7 +8,7 @@ module.exports = function (grunt) {
       all: ['script/*.js']
     },
     csslint: {
-      
+      src: ['styles/*.css']
     }
   });
 

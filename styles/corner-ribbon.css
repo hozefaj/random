@@ -27,6 +27,7 @@
     -moz-transform: rotate(-45deg);
     -ms-transform: rotate(-45deg);
     -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
     position: relative;
     padding: 4px 0;
     left: -30px;
