@@ -1,0 +1,37 @@
+/*  Need to adjust the CSS accordingly to fit the container. 
+    This is left aligned corner ribbon. 
+    Based from http://jsfiddle.net/chriscoyier/H6rQ6/1/  
+    <div class="wrapper">
+      <div class="ribbon-wrapper">
+        <div class="ribbon">NEW!</div>
+      </div>
+    </div>
+*/
+
+.wrapper {
+    position: relative;
+    z-index: 90;
+}
+.ribbon-wrapper {
+    width: 82px;
+    height: 88px;
+    overflow: hidden;
+    position: absolute;
+    top: -1px;
+    left: -1px;
+}
+/* left aligned */
+.ribbon {
+    text-align: center;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    position: relative;
+    padding: 4px 0;
+    left: -30px;
+    top: 15px;
+    width: 120px;
+    background-color: #0079C1;
+    color: #fff;
+}

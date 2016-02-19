@@ -6,11 +6,14 @@ module.exports = function (grunt) {
         devel: true
       },
       all: ['script/*.js']
+    },
+    csslint: {
+      
     }
   });
 
 grunt.loadNpmTasks('grunt-contrib-jshint');
 grunt.loadNpmTasks('grunt-contrib-csslint');
 
-grunt.registerTask('test', ['jshint']);
+grunt.registerTask('test', ['jshint', 'csslint']);
 };
