@@ -1,3 +1,4 @@
+/*jslint node:true */
 var fs = require('fs');
 var path = require('path');
 var del = require('delete');
