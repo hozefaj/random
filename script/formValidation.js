@@ -1,5 +1,6 @@
+/*jslint white: true */
 (function(){
-
+    'use strict';
 	var globalValidation = {
 
 		validateName : function (elemValue){
@@ -11,9 +12,10 @@
 		},
 
 		clearFormErrors : function(frmObject){
-			var frmErrorObjects = frmObject.getElementsByClassName('errorMsg');
+			var frmErrorObjects = frmObject.getElementsByClassName('errorMsg'),
+                count=0;
 		
-			for (var count = 0; count < frmErrorObjects.length; count++){
+			for (count; count < frmErrorObjects.length; count++){
 				frmErrorObjects[count].style.display = "none";
 			}
 		},
@@ -21,7 +23,7 @@
 		showFormErrors : function(elemObject){
 			elemObject.parentNode.getElementsByClassName('errorMsg')[0].style.display="block";
 		}
-	}
+	};
 
 	var validateContactForm = {
 
@@ -30,10 +32,10 @@
 			/* clear all error messages in form */
 			globalValidation.clearFormErrors(window.contactForm);
 
-			var fName 			= document.getElementById("firstName")
-			,   lName 			= document.getElementById("lastName")
-			,   emailID 		= document.getElementById("emailID")
-			,	errFocusObject 	= [];
+			var fName = document.getElementById("firstName"),
+                lName = document.getElementById("lastName"),
+                emailID = document.getElementById("emailID"),
+				errFocusObject = [];
 
 			if(!globalValidation.validateName(fName.value)){
 				 globalValidation.showFormErrors(fName);
@@ -61,6 +63,6 @@
 			var frmContact = document.getElementById("contactForm");
 			frmContact.addEventListener("submit", validateContactForm.doValidation);
 		}
-	}
+	};
 	validateContactForm.init();	
-})();
+}());
