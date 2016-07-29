@@ -1,3 +1,7 @@
+// You will be given a list of 32 bits unsigned integers. 
+// You are required to output the list of the unsigned integers you get by 
+// flipping bits in its binary representation (i.e. unset bits must be set, and set bits must be unset).
+
 function processNumber(number) {
   // convert to binary
   var binaryArr  = [];
