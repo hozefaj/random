@@ -1,3 +1,4 @@
+/*jshint esversion: 6 */
 // show/hide password in forms
 
 const nodeList = document.getElementsByTagName("input");
