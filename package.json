@@ -21,6 +21,7 @@
     "sync-request": "^2.0.1",
     "urllib-sync": "^1.1.0"
   },
+  "repository": "https://github.com/hozefaj/snippets.git",
   "devDependencies": {
     "grunt": "^0.4.5",
     "grunt-cli": "^0.1.13",
