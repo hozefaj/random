@@ -8,6 +8,11 @@
 * [callbacks](#callbacks)
 
 
+### Misc
+- `event` capture happens from top-to-down on the DOM tree, while `event` bubbling the other way.
+- `addEventListner` option [`once`](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener) happens to remove the listner after ONE event.
+
+
 > SourceMaps: way to map production minified code into its original state
 
 ###[Arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
