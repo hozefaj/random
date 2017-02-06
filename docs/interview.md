@@ -17,12 +17,37 @@ console.log(formatString(str, values));
 
 // Write a program that generates fibonnacci series using recursion. 
 // For ex generate an output like 1,1,2,3,5,8,13,21,34,55,89,.....,1000. 
-// Every number is a sum of previous 2 numbers with the exception of number 1 which is repeated twice. 
-// Terminate your program when the last number is >= 1000
+// F(n) = F(n-1) + F(n-2)
 
-function generateFibonnacci(num1, num2) {
-  if(num2<=1000) {
-    generateFibonnacci(num2, num1+num2) ;
+function fibonacci(num){
+  var a = 1, b = 0, temp;
+
+  while (num >= 0){
+    temp = a;
+    a = a + b;
+    b = temp;
+    num--;
   }
+
+  return b;
 }
+
+// with resursion
+// O(2^n): exponential complexity
+function fibonacci(num) {
+  if (num <= 1) return 1;
+  
+  return fibonacci(num-1) + fibonacci(num-2);
+}
+
+// resursion with memotization
+// reducing the time complexity to O(n)
+function fibonacci(num, memo) {
+  memo = memo || {};
+
+  if (memo[num]) return memo[num];
+  if (num <= 1) return 1;
+
+  return memo[num] = fibonacci(num - 1, memo) + fibonacci(num - 2, memo);
+
 ```
