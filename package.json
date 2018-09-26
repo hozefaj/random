@@ -7,7 +7,7 @@
     "del": "^2.1.0",
     "delete": "^0.2.1",
     "htmltidy": "^0.0.6",
-    "jquery": "^2.1.4",
+    "jquery": "^3.0.0",
     "less": "^2.5.1",
     "line-by-line": "^0.1.4",
     "node-metainspector": "^1.1.0",
