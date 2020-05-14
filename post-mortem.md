@@ -1,10 +1,12 @@
 # Post Morterm Template
 
-This is a template that can be used for doing post morterms.
+This is a template that can be used for doing post morterms. Helps documentating an exact timeline around the sequence of events.
+
+> One thing to make sure that this should be a blameless exercise. The idea of this exercise, is to come up 
 
 Recommended readings
-Five Whys, Startup Lessons Learned
-Five whys, Wikipedia
+1. Five Whys, Startup Lessons Learned
+1. Five whys, Wikipedia
 
 ---
 ## 2020-MM-DD Incident Post Mortem
