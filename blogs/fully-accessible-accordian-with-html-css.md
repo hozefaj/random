@@ -56,7 +56,7 @@ details[open] summary:after {
 
 On the `details` tag, there is also an option to have it open by default. Use the `open` attribute to do that. Goes like `<details open>`.
 
-{% codesandbox accordion-with-details-tag-vqwsb %}
+You can try it out on [codesandbox](https://codesandbox.io/embed/accordion-with-details-tag-vqwsb?fontsize=14&hidenavigation=1&theme=dark)
 
 Other than Edge & IE(of course) all other [browsers support these tags](https://caniuse.com/#search=details).
 
