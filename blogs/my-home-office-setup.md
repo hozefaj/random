@@ -62,4 +62,5 @@ A textured surface massages the soles of your feet for stress reduction. Two-pos
 
 <a href="https://www.amazon.com/gp/product/B014INJCT4/ref=as_li_ss_il?ie=UTF8&psc=1&linkCode=li2&tag=ummuld04-20&linkId=b741e6d621cb7c9f61a1860b6f5e444f&language=en_US" target="_blank"><img border="0" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B014INJCT4&Format=_SL160_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=ummuld04-20&language=en_US" ></a><img src="https://ir-na.amazon-adsystem.com/e/ir?t=ummuld04-20&language=en_US&l=li2&o=1&a=B014INJCT4" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
 
-Other things I keep handy are a notepad and stickes to take quick notes.  
+### Pegboard + container
+I also added a [pegboard](https://www.ikea.com/us/en/search/products/?q=skadis%20pegboard) & [container](https://www.ikea.com/us/en/p/skadis-container-assorted-colors-90456463/) to store cables and other random things around.
