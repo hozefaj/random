@@ -1,6 +1,5 @@
 ---
 title: My Home Office setup
-description:
 tags: workstations, productivity
 ---
 
