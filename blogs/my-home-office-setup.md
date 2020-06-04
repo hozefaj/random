@@ -63,3 +63,8 @@ A textured surface massages the soles of your feet for stress reduction. Two-pos
 
 ### Pegboard + container
 I also added a [pegboard](https://www.ikea.com/us/en/search/products/?q=skadis%20pegboard) & [container](https://www.ikea.com/us/en/p/skadis-container-assorted-colors-90456463/) to store cables and other random things around.
+
+### Printer
+With WFH for an extended period of time, I went ahead and bought a printer also. I use it for printing any official documents. Another use I am getting out it is printing worksheets for my kids.
+
+<a href="https://www.amazon.com/HP-DeskJet-Wireless-Printing-Replenishment/dp/B07H4V9R4D/ref=as_li_ss_il?dchild=1&keywords=HP+DeskJet+3755&qid=1591291657&sr=8-3&linkCode=li3&tag=ummuld04-20&linkId=f6d576655fa8bfb01bcb007b2ced0891&language=en_US" target="_blank"><img border="0" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B07H4V9R4D&Format=_SL250_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=ummuld04-20&language=en_US" ></a><img src="https://ir-na.amazon-adsystem.com/e/ir?t=ummuld04-20&language=en_US&l=li3&o=1&a=B07H4V9R4D" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
